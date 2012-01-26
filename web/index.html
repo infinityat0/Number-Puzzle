@@ -1,0 +1,90 @@
+<!--
+    Document   : battleShips ;
+    Created on : Oct 22, 2008, 6:40:15 PM ;
+    Author     : Sunny_Gujjaru ;
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-------------------------------------------------------------------------- -->
+<html>
+<!-------------------------------------------------------------------------- -->
+  <head>
+     <title>Puzzle Game</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+     <link rel = 'Stylesheet' type = 'text/css' href = 'css/style.css'>
+     <script type="text/javascript" src="scripts/jquery.js"></script>
+     <script type="text/javascript" src = "scripts/gameFunc.js"></script>
+  </head>
+<!-------------------------------------------------------------------------- -->
+<body>
+<!-------------------------------------------------------------------------- -->
+    <div class="main"><div class="main-width">
+<!-------------------------------------------------------------------------- -->
+        <div class = "header">
+            <h1> Puzzle </h1>
+        </div>
+<!-------------------------------------------------------------------------- -->
+        <div class ="content">
+                <div class="column-right">
+                    <div class="line">
+                        <input type ="button" id ="end" class ="button right" name = "giveUp" value="Give Up" />
+                        <input type ="button" id ="start" class ="button" name = "startGame" value="Start Game" />
+                    </div>
+                    <div class="line">
+                        <span id ="playerName" class ="right">sdf</span> Name
+                    </div>
+                    <div class="line">
+                        <span id ="noOfMoves" class ="right">df</span> No of Moves
+                    </div>
+                    <div class="line">
+                                    <select class="right">
+                                            <option value="random"> Randome </option>
+                                            <option value="ordered"> Ordered </option>
+                                    </select>
+                                    Scrable Type
+                    </div>
+                    <div class="line">
+                        <span id ="message" class ="right"></span> Message
+                    </div>
+                </div>
+                <div class ="column-center">
+                    <table id="table" class="box">
+                        <tr>
+                            <td id ="00" class ="cell">1</td>
+                            <td id ="01" class ="cell"></td>
+                            <td id ="02" class ="cell"></td>
+                            <td id ="03" class ="cell"></td>
+                        </tr>
+                        <tr>
+                            <td id ="10" class ="cell"></td>
+                            <td id ="11" class ="cell"></td>
+                            <td id ="12" class ="cell"></td>
+                            <td id ="13" class ="cell"></td>
+                        </tr>
+                        <tr>
+                            <td id ="20" class ="cell"></td>
+                            <td id ="21" class ="cell"></td>
+                            <td id ="22" class ="cell"></td>
+                            <td id ="23" class ="cell"></td>
+                        </tr>
+                        <tr>
+                            <td id ="30" class ="cell"></td>
+                            <td id ="31" class ="cell"></td>
+                            <td id ="32" class ="cell"></td>
+                            <td id ="33" class ="cell"></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+<!-------------------------------------------------------------------------- -->
+        <div class="footer">
+            <span class="right">
+                Theme Inspiration from <a href="http://www.wordpress.org/" target="_blank">WordPress</a><br>
+            </span>
+            &copy Copy left and right! Use the way you want to. <span id ="smiley" class ="smiley">:)</span>
+        </div>
+<!-------------------------------------------------------------------------- -->
+    </div></div>
+<!-------------------------------------------------------------------------- -->
+</body>
+<!-------------------------------------------------------------------------- -->
+</html>

@@ -1,0 +1,217 @@
+* {margin:0;padding:0;} 
+
+html, body { 
+    background-image:url('../images/bg_linen.png'); 
+    background-repeat:repeat;
+    background-color: #f5f6f7;
+    height: 100%; 
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    overflow: hidden;
+    /* For Internet Explorer */
+    /* As if... */
+}
+.push {
+    margin-top: 20px;
+    border: 0 solid red;
+}
+/* Radial Blur in Background
+-----------------------------------------------------------------------------*/ 
+#gradient_radial {
+    background-color: #2F2727;
+    background-image: url(../images/BG_Radial_gradient.png);
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+    position: absolute; top: 0; left: 0;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 900, from(#4e4e56), color-stop(0.5, #000000), to(#000000));
+    background: -moz-radial-gradient(50% 50% 45deg, circle farthest-corner, #4e4e56, #000000, #000000) repeat scroll 0 0 transparent;
+}
+
+
+
+
+
+
+/* Content
+-----------------------------------------------------------------------------*/ 
+#wrap {
+    min-height: 100%;
+    width: 99%;
+    text-align: center;
+    border: 0 solid red;
+}
+
+
+
+#content {
+    overflow: auto;
+    min-height: 480px;
+    margin-top: 0;
+    margin: 0 auto;
+    width: 80% ; 
+    /*overflow: hidden;*/
+    border: 0 solid green;
+}
+
+
+
+
+
+
+
+/* App Icons in Background
+-----------------------------------------------------------------------------*/ 
+#icons {
+    position: absolute; top: 200px; left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    border: 0 solid blue;
+    z-index: 8888;
+}
+
+
+.CMA_icon {
+    width: 142px;
+    height: 142px;
+    border: 0 solid blue;
+}
+
+
+.Runner_icon {
+    width: 142px;
+    height: 142px;
+    border: 0 solid blue;
+}
+
+
+.SmartSign_icon {
+    width: 142px;
+    height: 142px;
+    border: 0 solid blue;
+}
+
+
+.iPlano_icon  {
+    width: 142px;
+    height: 142px;
+    border: 0 solid blue;
+}
+
+
+.icon_spacer {
+    width: 10px;
+    height: 142px;
+    margin-left: 100px;
+    border: 0 solid green;
+}
+
+
+.icon_shadow { 
+    background: transparent;
+    width: 142px;
+    height: 142px;
+    -moz-box-shadow: 0 0 20px  #191919; -webkit-box-shadow: 0 0 20px  #191919; box-shadow: 0 0 20px  #191919;
+    border-radius: 24px;
+}
+
+
+
+
+
+
+
+
+/* Center Login Box
+-----------------------------------------------------------------------------*/ 
+#login_box {
+    background-color: transparent;
+    background-image: url("../images/loginbkg.png");
+    height: 340px;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -180px;
+    position: absolute;
+    top: 50%;
+    width: 326px;
+    z-index: 5;
+}
+
+.login_shadow { 
+    /*background: transparent;*/
+    
+    -moz-box-shadow: 0 0 70px  #000; -webkit-box-shadow: 0 0 70px  #000; box-shadow: 0 0 70px  #000;
+    border-radius: 24px;
+    /*z-index: 999999;*/
+}
+
+form{
+    position: relative;
+    top: 180px;
+}
+.invisible{
+    display: none ; 
+}
+input { 
+    border : 1px; 
+    width: 260px; 
+    height: 40px;
+    margin-bottom: 20px; 
+    padding-left:10px;
+    -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; 
+    font-size:16px; 
+    outline: none;
+    resize: none;
+    color: #888; 
+}
+
+.password { 
+    margin: 0 auto; 
+    background-image:url('../images/enter_arrow.png'); 
+    background-repeat:no-repeat; 
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/ 
+#footer {
+    position: absolute; bottom: 0; left: 0;
+    margin-top: -10px; /* negative value of footer height */
+    height: 30px;
+    width: 100%;
+    padding-top: 50px;
+} 
+
+
+
+.footer_forgot {
+    float: left;
+    margin: 0;
+    padding-left: 50px;
+    border: 0 solid red;
+    color: #72767E;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    text-shadow: 0 1px 2px black;
+} 
+
+
+
+.footer_copyright {
+    float: right;
+    margin: 0;
+    padding-right: 50px;
+}
+
+
+a:link {text-decoration: none; color: #8a8a8a; font-weight: normal; } 
+a:visited {text-decoration: none; color: #8a8a8a; font-weight: normal;} 
+a:hover {text-decoration: underline; color: #0085ce; font-weight: underline;} 
+a:active {text-decoration: underline; color: #0085ce; font-weight: underline;} 
+
+

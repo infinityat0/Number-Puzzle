@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Number Puzzle</title>
+    <meta name="description" content="Slide the numbered tiles back into order." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='8' y='8' width='84' height='84' rx='16' fill='%23c4572e'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>15</text></svg>" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Number Puzzle</h1>
+        <p class="tagline">Slide the tiles back into order.</p>
+      </header>
+
+      <div class="controls">
+        <select id="size" aria-label="Board size">
+          <option value="3">3 × 3</option>
+          <option value="4" selected>4 × 4</option>
+          <option value="5">5 × 5</option>
+        </select>
+        <button id="shuffle" type="button" class="btn primary">Shuffle</button>
+      </div>
+
+      <section class="stats" aria-label="Game status">
+        <div><span class="label">Moves</span><span id="moves" class="value">0</span></div>
+        <div><span class="label">Time</span><span id="time" class="value">0</span></div>
+        <div><span class="label">Best</span><span id="best" class="value">–</span></div>
+      </section>
+
+      <div id="board" class="board" role="group" aria-label="Puzzle board" tabindex="0"></div>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+
+      <details class="rules">
+        <summary>How to play</summary>
+        <ul>
+          <li>Tap a tile in the same row or column as the gap to slide it.</li>
+          <li>Tap a tile further away and every tile between it and the gap slides together, as one move.</li>
+          <li>Arrow keys slide the tile next to the gap in that direction.</li>
+          <li>Put the numbers back in order, reading left to right, with the gap in the bottom-right corner.</li>
+        </ul>
+      </details>
+    </main>
+  </body>
+</html>

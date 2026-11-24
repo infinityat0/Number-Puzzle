@@ -1,0 +1,63 @@
+:root {
+  --accent: #c4572e;
+  --tray: #e3dbcf;
+  --tile: #fffaf1;
+  --tile-edge: #d8ccbb;
+  --tile-text: #3a2f26;
+  --home: #c4572e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --accent: #ec8a62;
+    --tray: #2b2724;
+    --tile: #3a3531;
+    --tile-edge: #1e1b19;
+    --tile-text: #f1e8dd;
+    --home: #ec8a62;
+  }
+}
+
+.board {
+  --gap: 8px;
+  position: relative;
+  width: min(100%, 440px);
+  aspect-ratio: 1;
+  background: var(--tray);
+  border-radius: 16px;
+  padding: var(--gap);
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.board:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+.tile {
+  position: absolute;
+  top: var(--gap);
+  left: var(--gap);
+  width: calc((100% - var(--gap) * (var(--size) + 1)) / var(--size));
+  height: calc((100% - var(--gap) * (var(--size) + 1)) / var(--size));
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 10px;
+  background: var(--tile);
+  color: var(--tile-text);
+  box-shadow: 0 3px 0 var(--tile-edge), 0 4px 10px rgb(0 0 0 / 0.12);
+  font: 700 clamp(1.1rem, calc(22vw / var(--size)), 2.4rem) / 1 system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: transform 110ms ease-out, background 200ms, color 200ms;
+  -webkit-tap-highlight-color: transparent;
+  /* --x and --y are the tile's column and row */
+  transform: translate(
+    calc(var(--x) * (100% + var(--gap))),
+    calc(var(--y) * (100% + var(--gap)))
+  );
+}
+
+.tile.home { color: var(--home); }
+.tile.fixed { cursor: default; }
+.board.won .tile { background: var(--accent); color: #fff; box-shadow: 0 3px 0 rgb(0 0 0 / 0.25); }
